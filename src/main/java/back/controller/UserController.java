@@ -32,7 +32,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping("/all")
+    @GetMapping("/all")
     public List<User> getUsers() {
         return userService.getAll();
     }
